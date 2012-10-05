@@ -1,8 +1,4 @@
-export twilio_account=""
-export twilio_token=""
+export TWILIO_ACCOUNT=""
+export TWILIO_TOKEN=""
 
-export postgres_url=""
-export postgres_port=""
-export postgres_db=""
-export postgres_user=""
-export postgres_path=""
+export POSTGRES_URL="postgresql://user:pass@localhost/mydatabase"
