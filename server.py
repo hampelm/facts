@@ -59,6 +59,7 @@ def hello():
     number_of_facts = len(facts)
     people = Person.query.all()
 
+    print people
     for person in people:
         print "Sending some facts"
         print person.next_fact
