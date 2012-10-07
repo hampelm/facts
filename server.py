@@ -54,11 +54,13 @@ db.create_all()
 # Send out some facts!!
 @app.route("/")
 def hello():
+    print "We got a request"
     facts = Fact.query.order_by(Fact.fact_number).all()
     number_of_facts = len(facts)
     people = Person.query.all()
 
     for person in people:
+        print "Sending some facts"
         print person.next_fact
         print number_of_facts
 
