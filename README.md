@@ -11,8 +11,41 @@ It's a small script to send a fact from a list of facts to friends. A sample lis
 Install
 =======
 
+This runs great on Heroku.
+
+You'll need:
+* A Twilio account 
+* A Postgres database
+
+You'll need to set environment variables with details for those services. You can use `setenv.sh` has a handy 
+example (and run `source setenv.sh` to use them).
+
+Make sure to set your phone number, too! That way, when people text back at your cat facts app, you can 
+seamleslly (and anonymously!) reply to them.
+
+Then, install with these commands:
+
 `virtualenv env --no-site-packages`
+
+To create a virtualenv
 
 `source env/bin/activate`
 
+To use your virtual environment
+
 `pip install -r requirements.txt`
+
+To install the required python pacakages into the environment
+
+Then, to get started, run
+
+`python server.py`
+
+That will set up the database with fairly logical tables. 
+
+Next, add the facts and a target (or two) to the database. 
+
+Hit the endpoint, `http://yourserveraddress/`, to send the first round of facts. Further rounds can be sent manually
+by visiting that address, or you can set up cron or the Heroku scheduler. 
+
+
