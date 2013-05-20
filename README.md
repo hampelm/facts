@@ -17,11 +17,10 @@ You'll need:
 * A Twilio account 
 * A Postgres database
 
-You'll need to set environment variables with details for those services. You can use `setenv.sh` has a handy 
-example (and run `source setenv.sh` to use them).
+You'll need to set environment variables with details for those services. You can use the example `setenv.sh` in the repo (obviously, use your own environment variables and run `source setenv.sh`).
 
 Make sure to set your phone number, too! That way, when people text back at your cat facts app, you can 
-seamleslly (and anonymously!) reply to them.
+seamlessly (and anonymously!) reply to them.
 
 Then, install with these commands:
 
@@ -35,7 +34,7 @@ To use your virtual environment
 
 `pip install -r requirements.txt`
 
-To install the required python pacakages into the environment
+To install the required python packages into the environment
 
 Then, to get started, run
 
